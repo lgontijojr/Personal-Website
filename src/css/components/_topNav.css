@@ -5,10 +5,10 @@
   top: 0;
   position: fixed;
   width: 100%;
-  background-color: #f4f4f4;
+  background-color: white;
   font-family: "Comfortaa", cursive;
   display: inline-flex;
-  line-height: 2em;
+  line-height: 1.5em;
 }
 
 #navigation {
@@ -19,7 +19,7 @@
 #name {
   margin: 1em 0 1em 3em;
   font-size: 1.1em;
-  padding-right: 3em;
+  padding-right: 3.5em;
   font-weight: bold;
 }
 
