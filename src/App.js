@@ -1,7 +1,13 @@
+import { BrowserRouter as Router } from "react-router-dom";
+
+import TopNav from "./components/TopNav";
+
 function App() {
   return (
     <div className="App">
-      <h1 style={{ textAlign: "center" }}>Website Under Construction</h1>
+      <Router>
+        <TopNav></TopNav>
+      </Router>
     </div>
   );
 }
