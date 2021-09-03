@@ -7,20 +7,24 @@ function Footer() {
   return (
     <footer id="footer">
       <SocialIcon
-        url="https://twitter.com/"
-        style={{ height: "35px", width: "35px" }}
+        target="_blank"
+        className="social_media_icon"
+        url="https://twitter.com/gontijo_jr"
       />
       <SocialIcon
+        target="_blank"
+        className="social_media_icon"
         url="https://github.com/lgontijojr"
-        style={{ height: "35px", width: "35px" }}
       />
       <SocialIcon
+        target="_blank"
+        className="social_media_icon"
         url="https://www.linkedin.com/in/lgontijojr/"
-        style={{ height: "35px", width: "35px" }}
       />
       <SocialIcon
+        target="_blank"
+        className="social_media_icon"
         url="mailto:lgontijojr@gmail.com"
-        style={{ height: "35px", width: "35px" }}
       />
     </footer>
   );

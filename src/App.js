@@ -1,6 +1,6 @@
 import { BrowserRouter as Router } from "react-router-dom";
 import Footer from "./components/Footer";
-import TopNav from "./components/TopNav";
+import Menu from "./components/Menu";
 
 import "./css/_app.css";
 
@@ -8,7 +8,7 @@ function App() {
   return (
     <div className="App">
       <Router>
-        <TopNav></TopNav>
+        <Menu></Menu>
         <Footer></Footer>
       </Router>
     </div>

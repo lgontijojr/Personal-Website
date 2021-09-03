@@ -1,16 +1,11 @@
-import React from "react";
 import { Link } from "react-router-dom";
 
-import "../css/components/_topNav.css";
+import "../css/components/_sidenav.css";
 
-function TopNav() {
+function Sidenav() {
   return (
-    <header id="topnav">
-      <h1 id="name">
-        <a href="/">Luiz Gontijo</a>
-      </h1>
-
-      <nav id="navigation">
+    <div id="mySidenav" className="sidenav">
+      <nav>
         <ul>
           <li>
             <Link to="/about">About</Link>
@@ -25,10 +20,8 @@ function TopNav() {
           </li>
         </ul>
       </nav>
-
-      <div id="hamburger_menu"></div>
-    </header>
+    </div>
   );
 }
 
-export default TopNav;
+export default Sidenav;
