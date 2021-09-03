@@ -2,9 +2,12 @@ import { Link } from "react-router-dom";
 
 import "../css/components/_sidenav.css";
 
-function Sidenav() {
+function Sidenav(props) {
   return (
-    <div id="mySidenav" className="sidenav">
+    <div
+      id="mySidenav"
+      className={props.isOpen ? "sidenav_open" : "sidenav_closed"}
+    >
       <nav>
         <ul>
           <li>

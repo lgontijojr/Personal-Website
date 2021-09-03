@@ -1,21 +1,11 @@
-import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import Sidenav from "./Sidenav";
 
 import "../css/components/_menu.css";
-import hamburgerMenu from "../static/hamburger_icon.png";
+import hamburgerMenu from "../static/cil-hamburger-menu.svg";
 
 const name = "<Luiz Gontijo/>";
 
-function Menu() {
-  const [isOpen, toggleSidebar] = useState(false);
-
-  function renderSidebar() {
-    if (isOpen) {
-      return <Sidenav />;
-    }
-  }
-
+function Menu(props) {
   return (
     <header id="menu">
       <h1 id="name">
@@ -41,11 +31,14 @@ function Menu() {
       <div
         id="hamburger_menu"
         role="button"
-        onClick={() => toggleSidebar(!isOpen)}
+        onClick={() => props.toggleSidebar(!props.isOpen)}
       >
-        <img src={hamburgerMenu}></img>
+        <img
+          className="mobile_menu"
+          src={hamburgerMenu}
+          alt="mobile_menu"
+        ></img>
       </div>
-      {renderSidebar()}
     </header>
   );
 }
