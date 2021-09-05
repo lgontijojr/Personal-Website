@@ -3,18 +3,11 @@ import "../css/components/_profile.css";
 function Profile() {
   return (
     <aside className="profile">
-      <h1>LUIZ GONTIJO JR</h1>
-      <h3>LGONTIJOJR@GMAIL.COM</h3>
-      <hr
-        style={{
-          height: "2px",
-          borderWidth: 0,
-          backgroundColor: "black",
-          marginBottom: "2em",
-        }}
-      />
+      <h1 className="name">LUIZ GONTIJO JR</h1>
+      <h3 className="email">LGONTIJOJR@GMAIL.COM</h3>
+      <hr />
       <h4>ABOUT</h4>
-      <p>
+      <p className="description">
         Lorem Ipsum is simply dummy text of the printing and typesetting
         industry. Lorem Ipsum has been the industry's standard dummy text ever
         since the 1500s, when an unknown printer took a galley of type and

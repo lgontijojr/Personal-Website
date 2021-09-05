@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import "../css/components/_menu.css";
 import hamburgerMenu from "../static/cil-hamburger-menu.svg";
 
-const name = "<Luiz Gontijo/>";
+const name = "<LG/>";
 
 function Menu(props) {
   return (
