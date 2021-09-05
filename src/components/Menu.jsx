@@ -36,7 +36,7 @@ function Menu(props) {
         <img
           className="mobile_menu"
           src={hamburgerMenu}
-          alt="mobile_menu"
+          alt="mobile menu"
         ></img>
       </div>
     </header>

@@ -17,14 +17,14 @@
 }
 
 .article hr {
-  height: 1px;
+  height: 0.063em;
   border-width: 0;
   color: gray;
   background-color: gray;
 }
 
 .title_divider {
-  height: 2px !important;
+  height: 0.1em !important;
   border-width: 1 !important;
   background-color: black !important;
   margin-bottom: 2em !important;
@@ -35,9 +35,19 @@
   font-size: small;
 }
 
-@media screen and (max-width: 768px) {
+.article li {
+  color: #646464;
+  font-size: small;
+}
+
+.article h4 {
+  margin-bottom: -0.5em;
+}
+
+@media screen and (max-width: 900px) {
   .article {
     width: auto;
     padding: 1em;
+    margin-top: 5em;
   }
 }

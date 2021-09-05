@@ -3,21 +3,25 @@ import "../css/components/_profile.css";
 function Profile() {
   return (
     <aside className="profile">
-      <h1 className="name">LUIZ GONTIJO JR</h1>
+      <h1 className="name">LUIZ GONTIJO</h1>
       <h3 className="email">LGONTIJOJR@GMAIL.COM</h3>
       <hr />
-      <h4>ABOUT</h4>
-      <p className="description">
-        Lorem Ipsum is simply dummy text of the printing and typesetting
-        industry. Lorem Ipsum has been the industry's standard dummy text ever
-        since the 1500s, when an unknown printer took a galley of type and
-        scrambled it to make a type specimen book. It has survived not only five
-        centuries, but also the leap into electronic typesetting, remaining
-        essentially unchanged. It was popularised in the 1960s with the release
-        of Letraset sheets containing Lorem Ipsum passages, and more recently
-        with desktop publishing software like Aldus PageMaker including versions
-        of Lorem Ipsum.
-      </p>
+      <div className="description">
+        <p>
+          I was born and raised in Brazil and moved to California in 2012. Upon
+          moving here, I taught myself English and Spanish. Currently working at
+          Airtable as a Senior Software Developer.
+        </p>
+        <p>
+          I joined YearUp in 2014 where I learned Quality Engineering. I had the
+          opportunity to join Slack as an intern. After that I was offered to
+          join full time as a Quality Engineer in the Calls team.
+        </p>
+        <p>
+          More recently I joined Airtable to help build and scale their test
+          automation frameworks.
+        </p>
+      </div>
     </aside>
   );
 }

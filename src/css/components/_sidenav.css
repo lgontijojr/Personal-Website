@@ -15,13 +15,13 @@
   transform: translate();
 }
 
-.sidenav_closed a {
+.sidenav_closed ul {
   display: none;
 }
 
 .sidenav_open a {
   text-decoration: none;
-  font-size: 25px;
+  font-size: 1.5em;
   color: black;
   display: block;
   font-size: 1.1em;
@@ -33,7 +33,7 @@
   color: #f1f1f1;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 600px) {
   #mySidenav {
     display: none;
   }
