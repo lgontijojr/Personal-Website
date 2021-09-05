@@ -1,0 +1,8 @@
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@500&display=swap");
+
+.profile {
+  height: 100%;
+  width: 50%;
+  padding: 5em;
+  font-family: "Comfortaa", cursive;
+}
