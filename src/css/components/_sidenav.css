@@ -17,6 +17,10 @@
   display: none;
 }
 
+.sidenav_open li {
+  list-style: none;
+}
+
 .sidenav_open a {
   text-decoration: none;
   font-size: 1.5em;
@@ -28,7 +32,7 @@
 }
 
 .sidenav_open a:hover {
-  color: #f1f1f1;
+  color: #545b5a;
 }
 
 @media screen and (min-width: 600px) {
