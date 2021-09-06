@@ -1,40 +1,36 @@
 import { Link } from "react-router-dom";
 
-import "../css/components/_menu.css";
+import "../css/components/_navbar.css";
 const name = "<LG/>";
 
-const Menu = (props) => {
+const Navbar = (props) => {
   return (
-    <header id="menu">
-      <h1 id="name">
+    <header className="header">
+      <h1 className="name_logo">
         <a href="/">{name}</a>
       </h1>
-
-      <nav id="navigation">
-        <ul>
-          <li>
+      <nav className="nav_bar">
+        <ul className="nav_menu">
+          <li className="nav_item">
             <Link to="/about">About</Link>
           </li>
-
           <li>
             <Link to="/resume">Resume</Link>
           </li>
-
           <li>
             <Link to="/contact">Contact</Link>
           </li>
         </ul>
       </nav>
-
       <div
-        id="hamburger_menu"
+        className="hamburger_menu"
         role="button"
         onClick={() => props.toggleSidebar(!props.isOpen)}
       >
-        <div className="mobile_menu">☰</div>
+        ☰
       </div>
     </header>
   );
 };
 
-export default Menu;
+export default Navbar;

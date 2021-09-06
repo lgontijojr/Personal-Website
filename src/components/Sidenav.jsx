@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 
 import "../css/components/_sidenav.css";
 
-function Sidenav(props) {
+const Sidenav = (props) => {
   return (
     <div
       id="mySidenav"
@@ -18,7 +18,6 @@ function Sidenav(props) {
               About
             </Link>
           </li>
-
           <li>
             <Link
               onClick={() => props.toggleSidebar(!props.isOpen)}
@@ -27,7 +26,6 @@ function Sidenav(props) {
               Resume
             </Link>
           </li>
-
           <li>
             <Link
               onClick={() => props.toggleSidebar(!props.isOpen)}
@@ -40,6 +38,6 @@ function Sidenav(props) {
       </nav>
     </div>
   );
-}
+};
 
 export default Sidenav;

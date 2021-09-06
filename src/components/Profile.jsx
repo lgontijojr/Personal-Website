@@ -1,6 +1,6 @@
 import "../css/components/_profile.css";
 
-function Profile() {
+const Profile = () => {
   return (
     <aside className="profile">
       <h1 className="name">LUIZ GONTIJO</h1>
@@ -24,6 +24,6 @@ function Profile() {
       </div>
     </aside>
   );
-}
+};
 
 export default Profile;

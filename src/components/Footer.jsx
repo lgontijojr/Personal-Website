@@ -1,31 +1,29 @@
 import React from "react";
-import { SocialIcon } from "react-social-icons";
+
+import github from "../static/social_media_icons/github.png";
+import linkedin from "../static/social_media_icons/linkedin.png";
+import mail from "../static/social_media_icons/mail.png";
+import twitter from "../static/social_media_icons/twitter.png";
 
 import "../css/components/_footer.css";
 
 function Footer() {
   return (
     <footer id="footer">
-      <SocialIcon
-        target="_blank"
-        className="social_media_icon"
-        url="https://twitter.com/gontijo_jr"
-      />
-      <SocialIcon
-        target="_blank"
-        className="social_media_icon"
-        url="https://github.com/lgontijojr"
-      />
-      <SocialIcon
-        target="_blank"
-        className="social_media_icon"
-        url="https://www.linkedin.com/in/lgontijojr/"
-      />
-      <SocialIcon
-        target="_blank"
-        className="social_media_icon"
-        url="mailto:lgontijojr@gmail.com"
-      />
+      <div>
+        <a href="https://twitter.com/gontijo_jr">
+          <img src={twitter} alt="" className="social_media_icon" />
+        </a>
+        <a href="https://github.com/lgontijojr">
+          <img src={github} alt="Github Icon" className="social_media_icon" />
+        </a>
+        <a href="https://www.linkedin.com/in/lgontijojr/">
+          <img src={linkedin} alt="" className="social_media_icon" />
+        </a>
+        <a href="mailto:lgontijojr@gmail.com">
+          <img src={mail} alt="" className="social_media_icon" />
+        </a>
+      </div>
     </footer>
   );
 }

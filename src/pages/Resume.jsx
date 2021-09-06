@@ -1,6 +1,6 @@
 import Article from "../components/Article";
 
-function ResumePage() {
+const ResumePage = () => {
   const content = [
     {
       subTitle: "Education",
@@ -45,6 +45,6 @@ function ResumePage() {
     },
   ];
   return <Article title="Resume" content={content} />;
-}
+};
 
 export default ResumePage;
