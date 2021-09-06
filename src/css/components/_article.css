@@ -1,13 +1,16 @@
-@import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@500&display=swap");
-
 .article {
   height: 100%;
   width: 100%;
   border-style: solid;
   padding: 3em;
-  font-family: "Comfortaa", cursive;
+  font-family: "Raleway", sans-serif;
   border-width: 0.1em;
   border-color: gray;
+  margin-top: 2em;
+}
+
+.title {
+  font-family: "Rampart One", cursive;
 }
 
 .article h1 {
@@ -40,8 +43,13 @@
   font-size: small;
 }
 
+.article ul {
+  margin-top: -0.5em;
+}
+
 .article h4 {
   margin-bottom: -0.5em;
+  font-family: "Oswald", sans-serif;
 }
 
 @media screen and (max-width: 900px) {

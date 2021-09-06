@@ -4,7 +4,7 @@ import "../css/components/_article.css";
 const Article = (props) => {
   return (
     <article className="article">
-      <h1>{props.title}</h1>
+      <h1 className="title">{props.title}</h1>
       <hr className="title_divider" />
 
       <div>
@@ -16,8 +16,8 @@ const Article = (props) => {
                 <p>{item.paragraph}</p>
               </div>
               <ul>
-                {item.list?.map((listedItem) => {
-                  return <li>{listedItem}</li>;
+                {item.list?.map((listedItem, index) => {
+                  return <li key={index}>{listedItem}</li>;
                 })}
               </ul>
             </React.Fragment>

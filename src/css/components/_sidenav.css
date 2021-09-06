@@ -1,12 +1,10 @@
-@import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@500&display=swap");
-
 .sidenav_open {
   width: 50%;
   height: 100%;
   position: fixed;
   top: 0;
   left: 0;
-  background-color: #bebebe;
+  background-color: #bccbc9;
   padding-top: 3em;
   margin-top: 3em;
 
@@ -26,7 +24,7 @@
   display: block;
   font-size: 1.1em;
   margin-top: 2em;
-  font-family: "Comfortaa", cursive;
+  font-family: "Raleway", sans-serif;
 }
 
 .sidenav_open a:hover {

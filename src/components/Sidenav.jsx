@@ -11,15 +11,30 @@ function Sidenav(props) {
       <nav>
         <ul>
           <li>
-            <Link to="/about">About</Link>
+            <Link
+              onClick={() => props.toggleSidebar(!props.isOpen)}
+              to="/about"
+            >
+              About
+            </Link>
           </li>
 
           <li>
-            <Link to="/resume">Resume</Link>
+            <Link
+              onClick={() => props.toggleSidebar(!props.isOpen)}
+              to="/resume"
+            >
+              Resume
+            </Link>
           </li>
 
           <li>
-            <Link to="/contact">Contact</Link>
+            <Link
+              onClick={() => props.toggleSidebar(!props.isOpen)}
+              to="/contact"
+            >
+              Contact
+            </Link>
           </li>
         </ul>
       </nav>

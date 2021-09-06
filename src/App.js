@@ -20,8 +20,8 @@ function App() {
     <Router>
       <div className="App">
         <Menu isOpen={isOpen} toggleSidebar={toggleSidebar} />
-        <div className="main">
-          <Sidenav isOpen={isOpen} />
+        <div className="main" onClick={() => toggleSidebar(false)}>
+          <Sidenav isOpen={isOpen} toggleSidebar={toggleSidebar} />
           <Profile />
           <Switch>
             <Route path="/resume" component={ResumePage} />

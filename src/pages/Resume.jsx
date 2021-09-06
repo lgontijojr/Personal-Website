@@ -12,6 +12,10 @@ function ResumePage() {
       list: ["Item 1", "Item 2", "Item 3", "Item 4"],
     },
     {
+      paragraph: "Slack",
+      list: ["Item 1", "Item 2", "Item 3", "Item 4"],
+    },
+    {
       subTitle: "Technical Skills",
       list: ["Git", "React", "JavaScript", "Node.JS", "Automation"],
     },

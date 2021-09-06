@@ -1,11 +1,9 @@
 import { Link } from "react-router-dom";
 
 import "../css/components/_menu.css";
-import hamburgerMenu from "../static/cil-hamburger-menu.svg";
-
 const name = "<LG/>";
 
-function Menu(props) {
+const Menu = (props) => {
   return (
     <header id="menu">
       <h1 id="name">
@@ -33,14 +31,10 @@ function Menu(props) {
         role="button"
         onClick={() => props.toggleSidebar(!props.isOpen)}
       >
-        <img
-          className="mobile_menu"
-          src={hamburgerMenu}
-          alt="mobile menu"
-        ></img>
+        <div className="mobile_menu">☰</div>
       </div>
     </header>
   );
-}
+};
 
 export default Menu;
