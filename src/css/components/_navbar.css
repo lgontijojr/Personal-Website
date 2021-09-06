@@ -23,6 +23,10 @@
   font-family: "Rampart One", cursive;
 }
 
+.name_logo a {
+  border-style: none !important;
+}
+
 .nav_bar ul li {
   text-decoration: none;
   list-style: none;
@@ -33,6 +37,10 @@
 .header a {
   text-decoration: none;
   color: #000;
+  border-style: solid;
+  border-width: 0.1em;
+  border-radius: 10%;
+  padding: 0.1em;
 }
 
 .nav_bar a:hover {
@@ -45,6 +53,10 @@
 }
 
 @media screen and (max-width: 600px) {
+  .header {
+    line-height: 0.9em;
+  }
+
   .nav_bar {
     display: none;
   }
