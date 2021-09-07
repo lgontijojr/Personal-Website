@@ -1,28 +1,46 @@
 import React, { useState, useEffect } from "react";
 import Article from "../components/Article";
 
-const welcomeStrings = ["Bem vindo", "Welcome", "Bienvenue", "Welkom"];
+const welcomeStrings = [
+  "Bem vindo",
+  "Welcome",
+  "Bienvenue",
+  "Welkom",
+  "üdvözöljük",
+  "benvenuto",
+  "välkommen",
+  "ようこそ",
+];
 const waveEmoji = ["👋", "👋🏻", "👋🏼", "👋🏽", "👋🏾", "👋🏿"];
 
+const getRandomArrayItem = (array, currentState) => {
+  const randomIndex = Math.floor(Math.random() * array.length);
+  const next = array[randomIndex];
+
+  return next === currentState ? getRandomArrayItem(array, currentState) : next;
+};
+
 const WelcomePage = () => {
-  const [welcomeInDifferentLanguages, setDifferentLanguages] = useState(
+  const [welcomeInDifferentLanguage, setDifferentLanguages] = useState(
     welcomeStrings[0]
   );
-  const [waveEmojiInDifferentSkinTones, setEmojiDifferentSkinTone] = useState(
+
+  const [waveEmojiInDifferentSkinTone, setEmojiDifferentSkinTone] = useState(
     waveEmoji[0]
   );
 
   useEffect(() => {
     const interval = setInterval(() => {
       setDifferentLanguages(
-        welcomeStrings[Math.floor(Math.random() * welcomeStrings.length)]
+        getRandomArrayItem(welcomeStrings, welcomeInDifferentLanguage)
       );
       setEmojiDifferentSkinTone(
-        waveEmoji[Math.floor(Math.random() * waveEmoji.length)]
+        getRandomArrayItem(waveEmoji, waveEmojiInDifferentSkinTone)
       );
     }, 2000);
+
     return () => clearInterval(interval);
-  }, []);
+  });
 
   const content = [
     {
@@ -40,7 +58,7 @@ const WelcomePage = () => {
 
   return (
     <Article
-      headerTitle={`${waveEmojiInDifferentSkinTones} ${welcomeInDifferentLanguages}`}
+      headerTitle={`${waveEmojiInDifferentSkinTone} ${welcomeInDifferentLanguage}`}
       content={content}
     ></Article>
   );
