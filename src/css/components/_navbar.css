@@ -37,9 +37,6 @@
 .header a {
   text-decoration: none;
   color: #000;
-  border-style: solid;
-  border-width: 0.1em;
-  border-radius: 10%;
   padding: 0.1em;
 }
 

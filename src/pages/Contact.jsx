@@ -1,17 +1,34 @@
 import Article from "../components/Article";
 
+const content = [
+  {
+    bodyTitle: [
+      {
+        title: "Email",
+      },
+    ],
+    subTitle: [
+      {
+        description: "lgontijojr@gmail.com",
+      },
+    ],
+  },
+  {
+    bodyTitle: [
+      {
+        title: "Phone Number",
+      },
+    ],
+    subTitle: [
+      {
+        description: "(123)46-7890",
+      },
+    ],
+  },
+];
+
 const ContactPage = () => {
-  const content = [
-    {
-      subTitle: "Email",
-      paragraph: "lgontijojr@gmail.com",
-    },
-    {
-      subTitle: "Phone Number",
-      paragraph: "(123)456-7890",
-    },
-  ];
-  return <Article title="Contact" content={content} />;
+  return <Article headerTitle="Contact" content={content} />;
 };
 
 export default ContactPage;

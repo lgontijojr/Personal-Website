@@ -13,7 +13,7 @@ const Profile = () => {
           Airtable as a Senior Software Developer.
         </p>
         <p>
-          I joined YearUp in 2014 where I learned Quality Engineering. I had the
+          I joined YearUp in 2017 where I learned Quality Engineering. I had the
           opportunity to join Slack as an intern. After that I was offered to
           join full time as a Quality Engineer in the Calls team.
         </p>

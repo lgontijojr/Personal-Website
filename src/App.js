@@ -9,6 +9,7 @@ import Sidenav from "./components/Sidenav";
 import ResumePage from "./pages/Resume";
 import ContactPage from "./pages/Contact";
 import AboutPage from "./pages/About";
+import WelcomePage from "./pages/Welcome";
 
 import "./css/_app.css";
 import "./css/components/_body.css";
@@ -24,6 +25,7 @@ const App = () => {
           <Sidenav isOpen={isOpen} toggleSidebar={toggleSidebar} />
           <Profile />
           <Switch>
+            <Route path="/" exact component={WelcomePage} />
             <Route path="/resume" component={ResumePage} />
             <Route path="/about" component={AboutPage} />
             <Route path="/contact" component={ContactPage} />

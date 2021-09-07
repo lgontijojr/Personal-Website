@@ -9,6 +9,19 @@
   margin-top: 2em;
 }
 
+.article_date {
+  float: right;
+}
+
+.item {
+  text-align: center;
+  margin-bottom: -1em;
+}
+
+.divider {
+  width: 5em;
+}
+
 .title {
   font-family: "Rampart One", cursive;
 }
