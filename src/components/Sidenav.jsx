@@ -4,10 +4,7 @@ import "../css/components/_sidenav.css";
 
 const Sidenav = (props) => {
   return (
-    <div
-      id="mySidenav"
-      className={props.isOpen ? "sidenav_open" : "sidenav_closed"}
-    >
+    <div className="mobile_menu">
       <nav>
         <ul>
           <li>

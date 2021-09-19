@@ -13,7 +13,7 @@ const Article = (props) => {
           <React.Fragment>
             <h3 className="item_title">{i.section_title}</h3>
             <div>
-              {i.items.map((item) => {
+              {i.items.map((item, index) => {
                 return (
                   <React.Fragment>
                     <h4>{item.item_title}</h4>
@@ -23,8 +23,8 @@ const Article = (props) => {
                     })}
 
                     <ul>
-                      {item.item_list?.map((listedItem, index) => {
-                        return <li key={index}>{listedItem}</li>;
+                      {item.item_list?.map((listedItem) => {
+                        return <li>{listedItem}</li>;
                       })}
                     </ul>
                   </React.Fragment>

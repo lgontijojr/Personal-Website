@@ -4,7 +4,6 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Footer from "./components/Footer";
 import Navbar from "./components/Navbar";
 import Profile from "./components/Profile";
-import Sidenav from "./components/Sidenav";
 
 import ResumePage from "./pages/Resume";
 import ContactPage from "./pages/Contact";
@@ -22,7 +21,6 @@ const App = () => {
       <div className="App">
         <Navbar isOpen={isOpen} toggleSidebar={toggleSidebar} />
         <div className="main" onClick={() => toggleSidebar(false)}>
-          <Sidenav isOpen={isOpen} toggleSidebar={toggleSidebar} />
           <Profile />
           <Switch>
             <Route path="/" exact component={WelcomePage} />

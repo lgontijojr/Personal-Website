@@ -1,14 +1,45 @@
+import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
+import Sidenav from "./Sidenav";
 
 import "../css/components/_navbar.css";
-const name = "<LG/>";
 
 const Navbar = (props) => {
+  function getWindowWidth() {
+    const { innerWidth: width } = window;
+    return width;
+  }
+
+  const [windowWidth, setWindowWidth] = useState(getWindowWidth());
+
+  useEffect(() => {
+    function handleResize() {
+      setWindowWidth(getWindowWidth());
+    }
+
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  });
+
+  if (windowWidth > 600) props.toggleSidebar(false);
+
   return (
-    <header className="header">
-      <h1 className="name_logo">
-        <a href="/">{name}</a>
-      </h1>
+    <header className={props.isOpen ? "header_expand" : "header"}>
+      <div className="navbar_header">
+        <h1 className="name_logo">
+          <a href="/">{"<LG/>"}</a>
+        </h1>
+        <span
+          className="hamburger_menu"
+          role="button"
+          onClick={() => props.toggleSidebar(!props.isOpen)}
+        >
+          ☰
+        </span>
+      </div>
+      {props.isOpen && (
+        <Sidenav isOpen={props.isOpen} toggleSidebar={props.toggleSidebar} />
+      )}
       <nav className="nav_bar">
         <ul className="nav_menu">
           <li className="nav_item">
@@ -22,13 +53,6 @@ const Navbar = (props) => {
           </li>
         </ul>
       </nav>
-      <div
-        className="hamburger_menu"
-        role="button"
-        onClick={() => props.toggleSidebar(!props.isOpen)}
-      >
-        ☰
-      </div>
     </header>
   );
 };

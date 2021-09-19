@@ -1,42 +1,27 @@
-.sidenav_open {
-  width: 50%;
-  height: 100%;
-  position: fixed;
-  top: 0;
-  left: 0;
-  background-color: #bccbc9;
-  padding-top: 3em;
-  margin-top: 3em;
-
-  transition-timing-function: ease-in-out;
-  transition: 0.5s;
-  transform: translate();
-}
-
-.sidenav_closed ul {
-  display: none;
-}
-
-.sidenav_open li {
+.mobile_menu li {
   list-style: none;
+  width: 100%;
 }
 
-.sidenav_open a {
+.mobile_menu nav {
+  text-align: center;
+}
+
+.mobile_menu a {
   text-decoration: none;
   font-size: 1.5em;
+  margin-top: 2em;
   color: black;
   display: block;
-  font-size: 1.1em;
-  margin-top: 2em;
   font-family: "Raleway", sans-serif;
 }
 
-.sidenav_open a:hover {
-  color: #545b5a;
+.mobile_menu a:hover {
+  color: #ffffff;
 }
 
 @media screen and (min-width: 600px) {
-  #mySidenav {
+  .mobile_menu {
     display: none;
   }
 }
