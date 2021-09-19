@@ -7,11 +7,12 @@
   border-width: 0.1em;
   border-color: gray;
   margin-top: 2em;
+  border-radius: 1em;
 }
 
 .item_title {
   text-align: center;
-  margin-top: 4em;
+  margin-top: 2em;
 }
 
 .header_title {
@@ -21,7 +22,16 @@
 .article h1 {
   text-align: left;
   margin-bottom: 1em;
-  font-size: 2.2em;
+  font-size: 2.5em;
+}
+
+.article h3 {
+  font-size: 1.5em;
+}
+
+.article h4 {
+  font-size: 1.3em;
+  font-family: "Oswald", sans-serif;
 }
 
 .article hr {
@@ -33,23 +43,18 @@
 
 .header_title_divider {
   height: 0.1em !important;
-  border-width: 1 !important;
+  border-width: 0.05em !important;
   background-color: black !important;
-  margin-bottom: 2em !important;
 }
 
 .article li,
 .article p {
   color: #646464;
-  font-size: small;
+  font-size: 1em;
 }
 
 .article ul {
-  margin-top: -0.5em;
-}
-
-.article h4 {
-  font-family: "Oswald", sans-serif;
+  margin-top: -0.8em;
 }
 
 @media screen and (max-width: 1030px) {

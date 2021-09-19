@@ -4,7 +4,7 @@ export const welcomeText = [
     items: [
       {
         item_title:
-          "Feedback? Thoughts? Comments? Please send me an email or create a GitHub issue here",
+          "Feedback? Thoughts? Comments? Please send me an email or create a GitHub issue.",
         item_description: [],
         item_list: [],
       },
