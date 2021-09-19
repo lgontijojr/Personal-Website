@@ -1,34 +1,8 @@
 import Article from "../components/Article";
-
-const content = [
-  {
-    bodyTitle: [
-      {
-        title: "Email",
-      },
-    ],
-    subTitle: [
-      {
-        description: "lgontijojr@gmail.com",
-      },
-    ],
-  },
-  {
-    bodyTitle: [
-      {
-        title: "Phone Number",
-      },
-    ],
-    subTitle: [
-      {
-        description: "(123)46-7890",
-      },
-    ],
-  },
-];
+import { contactText } from "../static/data/contact";
 
 const ContactPage = () => {
-  return <Article headerTitle="Contact" content={content} />;
+  return <Article headerTitle="Contact" content={contactText} />;
 };
 
 export default ContactPage;

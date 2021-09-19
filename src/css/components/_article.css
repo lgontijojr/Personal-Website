@@ -9,21 +9,12 @@
   margin-top: 2em;
 }
 
-.article_date {
-  float: right;
-}
-
-.item {
+.item_title {
   text-align: center;
-  margin-bottom: -1em;
   margin-top: 4em;
 }
 
-.divider {
-  width: 5em;
-}
-
-.title {
+.header_title {
   font-family: "Rampart One", cursive;
 }
 
@@ -40,19 +31,15 @@
   background-color: gray;
 }
 
-.title_divider {
+.header_title_divider {
   height: 0.1em !important;
   border-width: 1 !important;
   background-color: black !important;
   margin-bottom: 2em !important;
 }
 
+.article li,
 .article p {
-  color: #646464;
-  font-size: small;
-}
-
-.article li {
   color: #646464;
   font-size: small;
 }
@@ -62,11 +49,10 @@
 }
 
 .article h4 {
-  margin-bottom: -0.5em;
   font-family: "Oswald", sans-serif;
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 1030px) {
   .article {
     width: auto;
     padding: 1em;

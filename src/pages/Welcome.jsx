@@ -1,17 +1,7 @@
 import React, { useState, useEffect } from "react";
 import Article from "../components/Article";
 
-const welcomeStrings = [
-  "Bem vindo",
-  "Welcome",
-  "Bienvenue",
-  "Welkom",
-  "üdvözöljük",
-  "benvenuto",
-  "välkommen",
-  "ようこそ",
-];
-const waveEmoji = ["👋", "👋🏻", "👋🏼", "👋🏽", "👋🏾", "👋🏿"];
+import { welcomeText, welcomeStrings, waveEmoji } from "../static/data/welcome";
 
 const getRandomArrayItem = (array, currentState) => {
   const randomIndex = Math.floor(Math.random() * array.length);
@@ -42,24 +32,10 @@ const WelcomePage = () => {
     return () => clearInterval(interval);
   });
 
-  const content = [
-    {
-      subTitle: [
-        {
-          title: "Welcome to my personal website!",
-        },
-        {
-          title:
-            "Feedback? Thoughts? Comments? Please send me an email or create a GitHub issue here",
-        },
-      ],
-    },
-  ];
-
   return (
     <Article
       headerTitle={`${waveEmojiInDifferentSkinTone} ${welcomeInDifferentLanguage}`}
-      content={content}
+      content={welcomeText}
     ></Article>
   );
 };

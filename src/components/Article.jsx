@@ -2,44 +2,38 @@ import React from "react";
 import "../css/components/_article.css";
 
 const Article = (props) => {
+  const { headerTitle, content } = props;
+
   return (
     <article className="article">
-      <h1 className="title">{props.headerTitle}</h1>
-      <hr className="title_divider" />
-
-      <div>
-        {props.content?.map((item, index) => {
-          return (
-            <React.Fragment key={index}>
-              <div>
-                {item.bodyTitle?.map((x, index) => {
-                  return (
-                    <React.Fragment key={index}>
-                      <h3 className="item">{x.title}</h3>
-                      <div>
-                        <p>{x.description}</p>
-                      </div>
-                    </React.Fragment>
-                  );
-                })}
-              </div>
-              {item.subTitle?.map((sub, index) => {
+      <h1 className="header_title">{headerTitle}</h1>
+      <hr className="header_title_divider" />
+      {content.map((i) => {
+        return (
+          <React.Fragment>
+            <h3 className="item_title">{i.section_title}</h3>
+            <div>
+              {i.items.map((item) => {
                 return (
-                  <React.Fragment key={index}>
-                    <h4>{sub.title}</h4>
-                    <p>{sub.description}</p>
+                  <React.Fragment>
+                    <h4>{item.item_title}</h4>
+
+                    {item.item_description?.map((description) => {
+                      return <p>{description}</p>;
+                    })}
+
+                    <ul>
+                      {item.item_list?.map((listedItem, index) => {
+                        return <li key={index}>{listedItem}</li>;
+                      })}
+                    </ul>
                   </React.Fragment>
                 );
               })}
-              <ul>
-                {item.list?.map((listedItem, index) => {
-                  return <li key={index}>{listedItem}</li>;
-                })}
-              </ul>
-            </React.Fragment>
-          );
-        })}
-      </div>
+            </div>
+          </React.Fragment>
+        );
+      })}
     </article>
   );
 };

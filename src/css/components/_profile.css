@@ -27,7 +27,7 @@
   font-size: small;
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 1030px) {
   .profile {
     width: auto;
     padding: 1em;
