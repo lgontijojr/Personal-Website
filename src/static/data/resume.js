@@ -1,23 +1,5 @@
 export const resumeText = [
   {
-    section_title: "Education",
-
-    items: [
-      {
-        item_title: "General Assembly",
-        item_description: ["JavaScript 10 weeks course."],
-        item_list: [],
-      },
-      {
-        item_title: "Year Up",
-        item_description: [
-          "JYear Up's job training program is tuition free,and offers access to today's best companiesand a proven path to career success.",
-        ],
-        item_list: [],
-      },
-    ],
-  },
-  {
     section_title: "Experience",
 
     items: [
@@ -25,7 +7,7 @@ export const resumeText = [
         item_title: "Airtable",
         item_description: ["Senior Software Engineer - Frameworks"],
         item_list: [
-          "Helped hire the automation and frameworks team. Interviewed over 8 candidates every week",
+          "Help hire the automation and frameworks team. Interviewed over 8 candidates every week",
         ],
       },
       {
@@ -55,7 +37,25 @@ export const resumeText = [
     ],
   },
   {
-    section_title: "Language Skills",
+    section_title: "Education",
+
+    items: [
+      {
+        item_title: "General Assembly",
+        item_description: ["JavaScript 10 weeks course."],
+        item_list: [],
+      },
+      {
+        item_title: "Year Up",
+        item_description: [
+          "Year Up's job training program is tuition free,and offers access to today's best companies and a proven path to career success.",
+        ],
+        item_list: [],
+      },
+    ],
+  },
+  {
+    section_title: "Languages",
 
     items: [
       {

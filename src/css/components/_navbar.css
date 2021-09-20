@@ -1,6 +1,6 @@
 .header {
   height: 4em;
-  transition: height 0.25s ease-in;
+  transition: height 0.25s ease-in-out;
   width: 100%;
   left: 0;
   top: 0;
@@ -15,7 +15,7 @@
 .header_expand {
   width: 100%;
   height: 100%;
-  transition: height 0.25s ease-in;
+  transition: height 0.25s ease-in-out;
   left: 0;
   top: 0;
   position: fixed;
@@ -38,6 +38,7 @@
   margin-left: 2.2em;
   font-size: 1.5em;
   font-family: "Rampart One", cursive;
+  -webkit-tap-highlight-color: transparent;
 }
 
 .name_logo a {
@@ -78,6 +79,7 @@
 
   .name_logo {
     font-size: 1.4em;
+    margin-left: 1.5em;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -92,5 +94,6 @@
     justify-content: center;
     float: right;
     cursor: pointer;
+    -webkit-tap-highlight-color: transparent;
   }
 }
