@@ -7,7 +7,7 @@ export const resumeText = [
         item_title: "Airtable",
         item_description: ["Senior Software Engineer - Frameworks"],
         item_list: [
-          "Help hire the automation and frameworks team. Interviewed over 8 candidates every week",
+          "Help hire the automation and frameworks team. Interview over 8 candidates every week",
         ],
       },
       {
@@ -42,13 +42,13 @@ export const resumeText = [
     items: [
       {
         item_title: "General Assembly",
-        item_description: ["JavaScript 10 weeks course."],
+        item_description: ["10 weeks course JavaScript."],
         item_list: [],
       },
       {
         item_title: "Year Up",
         item_description: [
-          "Year Up's job training program is tuition free,and offers access to today's best companies and a proven path to career success.",
+          "Year Up is an intensive, competitive technical training and career development program with 250 corporate partners, graduating 1,500 students annually across ten cities. The program includes college-level courses, professional training and a six-month internship.",
         ],
         item_list: [],
       },
