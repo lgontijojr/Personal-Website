@@ -42,7 +42,7 @@ export const resumeText = [
     items: [
       {
         item_title: "General Assembly",
-        item_description: ["10 weeks course JavaScript."],
+        item_description: ["10-week course JavaScript."],
         item_list: [],
       },
       {

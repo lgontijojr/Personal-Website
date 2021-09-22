@@ -1,11 +1,12 @@
 export const welcomeText = [
   {
-    section_title: "Welcome to my personal website!",
+    section_title: "",
     items: [
       {
-        item_title:
+        item_title: "Welcome to my personal website!",
+        item_description: [
           "Feedback? Thoughts? Comments? Please send me an email or create a GitHub issue.",
-        item_description: [],
+        ],
         item_list: [],
       },
     ],
