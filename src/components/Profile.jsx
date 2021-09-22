@@ -10,6 +10,7 @@ const Profile = () => {
         {profileText.map((item) => {
           return <p>{item}</p>;
         })}
+        <p className="copyright">© LUIZ GONTIJO JR</p>
       </div>
     </aside>
   );

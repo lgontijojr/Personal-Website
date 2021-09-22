@@ -9,7 +9,7 @@ import "../css/components/_footer.css";
 
 function Footer() {
   return (
-    <footer id="footer">
+    <footer class="footer">
       <div>
         <a href="https://twitter.com/gontijo_jr">
           <img src={twitter} alt="" className="social_media_icon" />

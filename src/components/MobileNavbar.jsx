@@ -1,8 +1,7 @@
 import { Link } from "react-router-dom";
+import "../css/components/_mobile_navbar.css";
 
-import "../css/components/_sidenav.css";
-
-const Sidenav = (props) => {
+const MobileNavbar = (props) => {
   return (
     <div className="mobile_menu">
       <nav>
@@ -37,4 +36,4 @@ const Sidenav = (props) => {
   );
 };
 
-export default Sidenav;
+export default MobileNavbar;

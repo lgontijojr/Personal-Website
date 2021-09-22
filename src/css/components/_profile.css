@@ -13,6 +13,11 @@
   margin-bottom: 2em !important;
 }
 
+.copyright {
+  font-size: 0.5em;
+  text-align: center;
+}
+
 .email {
   font-size: 1em;
 }

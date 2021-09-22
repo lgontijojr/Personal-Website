@@ -20,7 +20,7 @@ const App = () => {
     <Router>
       <div className="App">
         <Navbar isOpen={isOpen} toggleSidebar={toggleSidebar} />
-        <div className="main" onClick={() => toggleSidebar(false)}>
+        <div className="main">
           <Profile />
           <Switch>
             <Route path="/" exact component={WelcomePage} />

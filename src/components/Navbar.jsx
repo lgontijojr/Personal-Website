@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
-import Sidenav from "./Sidenav";
+import MobileNavbar from "./MobileNavbar";
 
 import "../css/components/_navbar.css";
 
@@ -38,7 +38,10 @@ const Navbar = (props) => {
         </span>
       </div>
       {props.isOpen && (
-        <Sidenav isOpen={props.isOpen} toggleSidebar={props.toggleSidebar} />
+        <MobileNavbar
+          isOpen={props.isOpen}
+          toggleSidebar={props.toggleSidebar}
+        />
       )}
       <nav className="nav_bar">
         <ul className="nav_menu">
