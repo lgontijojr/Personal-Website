@@ -1,7 +1,9 @@
 # Personal Website
 
 ### 🧰 Building The Website
-I've been wanting to build a personal website for years now! I finally decided to put sometime and effort and get it done. And it's here. I hope you like it.
+I've been wanting to build a personal website for years now! I finally decided to put sometime and effort and get it done.
+
+**And here it is: https://lgontijojr.com/** I hope you like it. ✊
 
 #### Stack
 - CSS
