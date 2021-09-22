@@ -6,13 +6,19 @@ I've been wanting to build a personal website for years now! I finally decided t
 #### Stack
 - CSS
 - JavaScript
-- React 
+- React
+
+#### Package Management
+I'm using [yarn](https://yarnpkg.com/)!
 
 #### 🖌️ Responsive Design
 This was fun to work on! This has always been the scariest part for me. Not anymore 🎉 There are three breakpoints:
 1. `> 1030px` -> Fullscreen
 2. `> 600px < 1030px` -> Tablet
 3. `< 600px` -> Mobile
+
+### Hosting
+I'm using [Google Firebase](https://firebase.com/) to host the website.
 
 ### 🚀 Future Changes
 1. The next step is to convert the existing code into TypeScript.
