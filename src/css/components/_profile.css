@@ -1,9 +1,12 @@
 .profile {
-  height: 100%;
-  width: 50%;
-  padding: 3.5em 3em 3em 0.5em;
+  width: 60%;
   font-family: "Raleway", sans-serif;
-  margin-top: 3.5em;
+}
+
+.profile-image {
+  height: 20em;
+  width: 20em;
+  border-radius: 50%;
 }
 
 .profile hr {
@@ -25,6 +28,7 @@
 .name {
   font-size: 2em;
   font-family: "Rampart One", cursive;
+  color: #d84339;
 }
 
 .description {

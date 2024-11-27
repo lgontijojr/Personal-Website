@@ -1,40 +1,40 @@
-.article {
+.section {
+  margin: 2em;
   height: 100%;
-  width: 100%;
+  min-width: 100%;
   border-style: solid;
-  padding: 3em;
   font-family: "Raleway", sans-serif;
   border-width: 0.1em;
   border-color: gray;
-  margin-top: 2em;
   border-radius: 1em;
 }
 
 .item_title {
   text-align: center;
-  margin-top: 2em;
+  color: #373234;
 }
 
 .header_title {
   font-family: "Rampart One", cursive;
+  color: #373234;
 }
 
-.article h1 {
+.section h1 {
   text-align: left;
-  margin-bottom: 1em;
+  margin: 1em;
   font-size: 2.5em;
 }
 
-.article h3 {
+.section h3 {
   font-size: 1.5em;
 }
 
-.article h4 {
+.section h4 {
   font-size: 1.3em;
   font-family: "Oswald", sans-serif;
 }
 
-.article hr {
+.section hr {
   height: 0.063em;
   border-width: 0;
   color: gray;
@@ -47,18 +47,18 @@
   background-color: black !important;
 }
 
-.article li,
-.article p {
+.section li,
+.section p {
   color: #646464;
   font-size: 1em;
 }
 
-.article ul {
+.section ul {
   margin-top: -0.8em;
 }
 
 @media screen and (max-width: 1030px) {
-  .article {
+  .section {
     width: auto;
     padding: 1em;
     margin-top: 5em;

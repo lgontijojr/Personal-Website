@@ -1,8 +1,8 @@
-import Article from "../components/Article";
+import Section from "../components/Section";
 import { aboutText } from "../static/data/about";
 
 const AboutPage = () => {
-  return <Article headerTitle="About" content={aboutText} />;
+  return <Section headerTitle="My Life Story" content={aboutText} />;
 };
 
 export default AboutPage;

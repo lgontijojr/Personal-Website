@@ -1,18 +1,24 @@
-import "../css/components/_profile.css";
 import { profileText } from "../static/data/profile";
+import profilePicture from "../static/images/ProfilePicture.png";
+
+import "../css/components/_profile.css";
 
 const Profile = () => {
   return (
-    <aside className="profile">
-      <h1 className="name">LUIZ GONTIJO</h1>
-      <hr />
-      <div className="description">
-        {profileText.map((item) => {
-          return <p>{item}</p>;
-        })}
-        <p className="copyright">© LUIZ GONTIJO JR</p>
+    <>
+      <div className="profile">
+        <h1 className="name">👋🏽 Hi, I'm Luiz</h1>
+        <hr />
+        <div className="description">
+          {profileText.map((item) => {
+            return <p>{item}</p>;
+          })}
+        </div>
       </div>
-    </aside>
+      <div>
+        <img className="profile-image" src={profilePicture} />
+      </div>
+    </>
   );
 };
 

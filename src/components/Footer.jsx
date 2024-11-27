@@ -3,17 +3,13 @@ import React from "react";
 import github from "../static/social_media_icons/github.png";
 import linkedin from "../static/social_media_icons/linkedin.png";
 import mail from "../static/social_media_icons/mail.png";
-import twitter from "../static/social_media_icons/twitter.png";
 
 import "../css/components/_footer.css";
 
 function Footer() {
   return (
-    <footer class="footer">
+    <footer className="footer">
       <div>
-        <a href="https://twitter.com/gontijo_jr">
-          <img src={twitter} alt="" className="social_media_icon" />
-        </a>
         <a href="https://github.com/lgontijojr">
           <img src={github} alt="Github Icon" className="social_media_icon" />
         </a>

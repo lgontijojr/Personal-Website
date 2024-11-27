@@ -1,11 +1,13 @@
 .main {
   display: flex;
-  margin: 5em;
+  flex-direction: column;
+  align-items: center;
 }
 
 @media screen and (max-width: 1030px) {
   .main {
-    flex-direction: column-reverse;
+    display: flex;
+    flex-direction: column;
     margin: 1em;
   }
 }

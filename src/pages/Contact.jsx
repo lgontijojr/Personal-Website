@@ -1,8 +1,8 @@
-import Article from "../components/Article";
+import Section from "../components/Section";
 import { contactText } from "../static/data/contact";
 
 const ContactPage = () => {
-  return <Article headerTitle="Contact" content={contactText} />;
+  return <Section headerTitle="Contact" content={contactText} />;
 };
 
 export default ContactPage;
