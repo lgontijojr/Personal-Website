@@ -1,11 +1,16 @@
 export const contactText = [
   {
-    section_title: "",
-    items: [
+    sectionTitle: "Contact",
+    content: [
       {
-        item_title: "Email",
-        item_description: ["LGONTIJOJR@GMAIL.COM"],
-        item_list: [],
+        type: "text",
+        tag: "h4", // For the item title
+        value: "Email",
+      },
+      {
+        type: "text",
+        tag: "p", // For the item description
+        value: "LGONTIJOJR@GMAIL.COM",
       },
     ],
   },
